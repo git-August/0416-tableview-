@@ -14,6 +14,7 @@
 		0FB3936C1ADFA4E4005F272C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB3936B1ADFA4E4005F272C /* Images.xcassets */; };
 		0FB3936F1ADFA4E4005F272C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB3936D1ADFA4E4005F272C /* LaunchScreen.xib */; };
 		0FB3937B1ADFA4E4005F272C /* _416_tableview___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3937A1ADFA4E4005F272C /* _416_tableview___Tests.m */; };
+		0FB393861ADFAF37005F272C /* model_contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB393851ADFAF37005F272C /* model_contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,14 @@
 		0FB393741ADFA4E4005F272C /* 0416-tableview联系人Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0416-tableview联系人Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB393791ADFA4E4005F272C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FB3937A1ADFA4E4005F272C /* _416_tableview___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_416_tableview___Tests.m"; sourceTree = "<group>"; };
+		0FB393841ADFAF37005F272C /* model_contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model_contact.h; sourceTree = "<group>"; };
+		0FB393851ADFAF37005F272C /* model_contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = model_contact.m; sourceTree = "<group>"; };
+		0FB393871ADFDDE8005F272C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		0FB393881ADFDDE8005F272C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0FB393891ADFE099005F272C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0FB3938A1ADFE099005F272C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0FB3938B1ADFE09E005F272C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0FB3938C1ADFE09E005F272C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,8 @@
 				0FB3936B1ADFA4E4005F272C /* Images.xcassets */,
 				0FB3936D1ADFA4E4005F272C /* LaunchScreen.xib */,
 				0FB3935E1ADFA4E4005F272C /* Supporting Files */,
+				0FB393841ADFAF37005F272C /* model_contact.h */,
+				0FB393851ADFAF37005F272C /* model_contact.m */,
 			);
 			path = "0416-tableview联系人";
 			sourceTree = "<group>";
@@ -180,7 +191,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 0FB393521ADFA4E4005F272C;
@@ -221,6 +231,7 @@
 			files = (
 				0FB393671ADFA4E4005F272C /* ViewController.m in Sources */,
 				0FB393641ADFA4E4005F272C /* AppDelegate.m in Sources */,
+				0FB393861ADFAF37005F272C /* model_contact.m in Sources */,
 				0FB393611ADFA4E4005F272C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +259,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				0FB393691ADFA4E4005F272C /* Base */,
+				0FB393871ADFDDE8005F272C /* zh-Hant */,
+				0FB393891ADFE099005F272C /* en */,
+				0FB3938B1ADFE09E005F272C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,6 +270,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				0FB3936E1ADFA4E4005F272C /* Base */,
+				0FB393881ADFDDE8005F272C /* zh-Hant */,
+				0FB3938A1ADFE099005F272C /* en */,
+				0FB3938C1ADFE09E005F272C /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
