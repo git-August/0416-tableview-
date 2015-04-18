@@ -53,8 +53,16 @@
 //when you tap cell delete button,tableview ask datasource to use the method
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
 //    NSLog(@"-----");
+    if  (editingStyle != UITableViewCellEditingStyleDelete) return;//remember add return
     [_contactarr removeObjectAtIndex:indexPath.row];
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationMiddle];
+}
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+//    NSLog(@"from %ld to %ld",sourceIndexPath.row,);
+//    [_contactarr exchangeObjectAtIndex:destinationIndexPath.row withObjectAtIndex:sourceIndexPath.row];
+    model_contact * contact = [_contactarr objectAtIndex:sourceIndexPath.row];
+    [_contactarr removeObjectAtIndex:sourceIndexPath.row];
+    [_contactarr insertObject:contact atIndex:destinationIndexPath.row];
 }
 //datasource invoke tableview delete method
 //tableview and controller is not is-a/has-a relation,so controller uses protocol to get tableview's property,
